@@ -8,6 +8,9 @@ public class Main {
         ArrayList<Flavor> flavors = menu.getFlavors();
         ArrayList<Cone> cones = menu.getCones();
 
+        flavors.sort(new FlavorComparator());
+        System.out.println(flavors);
+
         // TODO: Use a Comparator class to sort the 'flavors' array alphabetically by the 'name'
         //  field.
 
